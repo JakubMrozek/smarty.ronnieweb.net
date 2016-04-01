@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+ <head>
+  <meta name="generator" content="PSPad editor, www.pspad.com" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Smarty - {foreach},{foreachelse}" />
+    <meta name="keywords" content="php,php5,smarty,promenne" />
+    <meta name="robots" content="all, follow"/>
+    <meta name='googlebot' content='index,follow,snippet,archive' />
+    <meta name="author" content="Design a kod: Ronnie, jakub.mrozek@gmail.com" />
+    <link rel="stylesheet" href="default.css" type="text/css"  media="screen, projection, all" />
+
+    <link rel="stylesheet" href="print.css" type="text/css"  media="print" />
+    <title>
+      Smarty | {foreach},{foreachelse}
+      
+    </title>
+
+  </head>
+  <body>
+    <p>
+    <a class="preskoc_navigaci" href="funkce-foreach.php.html#content">Přeskočit navigaci</a>
+    </p>
+
+    <div id="hlavni_cast">
+    <p class="top">&nbsp;</p>
+    <h1><a href="index.php.html">{foreach},{foreachelse}<span></span></a></h1>
+    
+    <div id="toolbar">
+    <p><span>Právě se nacházíte:</span> <a href='index.php.html'>Úvod</a> &rsaquo;&rsaquo; {foreach},{foreachelse}</p>
+    </div>
+    
+    
+    <div id="menu">
+      <ul>   
+      <li><a href="index.php.html">Úvodní stránka</a></li>
+      <li><a href="co-je-smarty.php.html">Co je Smarty?</a></li>
+      <li><a href="instalace.php.html">Instalace</a></li>
+      <li><a href="moje-prvni-smarty.php.html">Moje první Smarty</a></li>
+      <li><a href="komentare.php.html">Komentáře</a></li>
+      <li><a href="promenne.php.html">Proměnné</a></li>
+      <li><a href="funkce.php.html">Funkce</a></li>
+      <li><a href="atributy.php.html">Atributy</a></li>
+      <li><a href="zabraneni-parsovani.php.html">Zabránění parsování</a></li>
+      <li><a href="smarty-promenne.php.html">Smarty proměnné</a></li>
+      <li><a href="modifikatory-obecne.php.html">Modifikátory obecně</a></li>
+      <li><a href="modifikator-capitalize.php.html">- capitalize</a></li>
+      <li><a href="modifikator-cat.php.html">- cat</a></li>
+      <li><a href="modifikator-count.php.html">- count_*</a></li>
+      <li><a href="modifikator-date-format.php.html">- date_format</a></li>
+      <li><a href="modifikator-default.php.html">- default</a></li>
+      <li><a href="modifikator-escape.php.html">- escape</a></li>
+      <li><a href="modifikator-indent.php.html">- indent</a></li>
+      <li><a href="modifikator-lower-a-upper.php.html">- lower a upper</a></li>
+      <li><a href="modifikator-nl2br.php.html">- nl2br</a></li>
+      <li><a href="modifikator-regex-replace.php.html">- regex_replace</a></li>
+      <li><a href="modifikator-replace.php.html">- replace</a></li>
+      <li><a href="modifikator-spacify.php.html">- spacify</a></li>
+      <li><a href="modifikator-string-format.php.html">- string_format</a></li>
+      <li><a href="modifikator-strip.php.html">- strip</a></li>
+      <li><a href="modifikator-strip-tags.php.html">- strip_tags</a></li>
+      <li><a href="modifikator-truncate.php.html">- truncate</a></li>
+      <li><a href="modifikator-wordwrap.php.html">- wordwrap</a></li>
+      <li><a href="kombinace-modifikatoru.php.html">Kombinace modifikátorů</a></li>
+      <li><a href="zabudovane-funkce.php.html">Zabudované funkce</a></li>
+      <li><a href="funkce-capture.php.html"> {capture}</a></li>
+      <li><a href="funkce-config-load.php.html"> {config_load}</a></li>
+      <li><a href="funkce-foreach.php.html"><strong> {foreach}</strong></a></li>
+      <li><a href="funkce-if.php.html"> {if}</a></li>
+      <li><a href="funkce-include.php.html"> {include}</a></li>
+      <li><a href="funkce-include-php.php.html"> {include_php}</a></li>
+      <li><a href="funkce-insert.php.html"> {insert}</a></li>
+      <li>--- of. web: ---</li>
+      <li><a href="http://smarty.net/manual/en/language.builtin.functions.php">Built-in Functions</a></li>
+      <li><a href="http://smarty.net/manual/en/language.custom.functions.php">Custom Functions</a></li>
+      <li><a href="http://smarty.net/manual/en/smarty.for.programmers.php">Pro programatory</a></li>
+      <li><a href="web-autor.php.html">Web, autor</a></li>
+      </ul>
+    </div>
+
+                                                        
+
+    <div id="content">
+    <h2>{foreach},{foreachelse}</h2>    
+    
+    <p>Funkce {foreach} pracuje stejně jako foreach v PHP, lze ji ovšem použít pouze pro jednoduché pole (narozdíl od {section}, viz dále). Cyklus {foreach} musí být vždy ukončena párovým tagem {/foreach}. Povinné atributy funkce jsou <var>from</var> pro proměnnou pole a <var>item</var> pomocí které se pak aktuálně odkazuje na daný prvek. Funkce {foreachelse} se vykoná tehdy, když předáte atributu <var>name</var> prázdnou proměnnou.</p>
+    
+    <p>Dále lze použít atribut <var>key</var>, který odkazuje na aktuální klíč (možná víte, že v PHP 5 již není nutné používat dlouhý zápis foreach jako v PHP 4). Posledním možným atributem je <var>name</var> pro označení cyklu {foreach}.</p>
+
+<pre><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php&nbsp;<br />$pole&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">'prvni'</span><span style="color: #007700">,</span><span style="color: #DD0000">'druhy'</span><span style="color: #007700">,</span><span style="color: #DD0000">'treti'</span><span style="color: #007700">,</span><span style="color: #DD0000">'ctvrty'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$smarty</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assign</span><span style="color: #007700">(</span><span style="color: #DD0000">'pole'</span><span style="color: #007700">,</span><span style="color: #0000BB">$pole</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></pre>  
+
+    <p>a šablona:</p>
+    
+<pre><code><span style="color: #000000">
+&lt;body&gt;<br />{foreach&nbsp;from=$pole&nbsp;key=klic&nbsp;item=polozka}<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Polozka&nbsp;cislo&nbsp;{$klic}&nbsp;ma&nbsp;hodnotu&nbsp;{$polozka}&lt;/p&gt;<br />{/foreach}<br />&lt;/body&gt;<br /></span>
+</code></pre> 
+    
+    <p>A výsledek  bude:</p>
+    
+<pre><code><span style="color: #000000">
+Polozka&nbsp;cislo&nbsp;0&nbsp;ma&nbsp;hodnotu&nbsp;prvni<br /><br />Polozka&nbsp;cislo&nbsp;1&nbsp;ma&nbsp;hodnotu&nbsp;druhy<br /><br />Polozka&nbsp;cislo&nbsp;2&nbsp;ma&nbsp;hodnotu&nbsp;treti<br /><br />Polozka&nbsp;cislo&nbsp;3&nbsp;ma&nbsp;hodnotu&nbsp;ctvrty<br /></span>
+</code></pre>     
+    
+    
+     <p>Pokračujte dále: <a href="funkce-if.php.html">{if},{elseif},{else}</a></p>
+         
+    </div>
+    </div>
+    <div id="paticka">
+    <p><a href="http://www.ronnieweb.net">RonnieWeb.net</a></p>
+    </div>
+  </body>
+</html>
