@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+ <head>
+  <meta name="generator" content="PSPad editor, www.pspad.com" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Smarty - instalace?" />
+    <meta name="keywords" content="php,php5,instalace,promenne" />
+    <meta name="robots" content="all, follow"/>
+    <meta name='googlebot' content='index,follow,snippet,archive' />
+    <meta name="author" content="Design a kod: Ronnie, jakub.mrozek@gmail.com" />
+    <link rel="stylesheet" href="default.css" type="text/css"  media="screen, projection, all" />
+
+    <link rel="stylesheet" href="print.css" type="text/css"  media="print" />
+    <title>
+      Smarty | Instalace Smarty
+      
+    </title>
+
+  </head>
+  <body>
+    <p>
+    <a class="preskoc_navigaci" href="#content">Přeskočit navigaci</a>
+    </p>
+
+    <div id="hlavni_cast">
+    <p class="top">&nbsp;</p>
+    <h1><a href="index.php">Co je smarty?<span></span></a></h1>
+    
+    <div id="toolbar">
+    <p><span>Právě se nacházíte:</span> <a href='index.php'>Úvod</a> &rsaquo;&rsaquo; Instalace Smarty?</p>
+    </div>
+    
+    
+    <div id="menu">
+      <ul>   
+      <li><a href="index.php">Úvodní stránka</a></li>
+      <li><a href="co-je-smarty.php">Co je Smarty?</a></li>
+      <li><a href=""><strong>Instalace</strong></a></li>
+      <li><a href="moje-prvni-smarty.php">Moje první Smarty</a></li>
+      <li><a href="komentare.php">Komentáře</a></li>
+      <li><a href="promenne.php">Proměnné</a></li>
+      <li><a href="funkce.php">Funkce</a></li>
+      <li><a href="atributy.php">Atributy</a></li>
+      <li><a href="zabraneni-parsovani.php">Zabránění parsování</a></li>
+      <li><a href="smarty-promenne.php">Smarty proměnné</a></li>
+      <li><a href="modifikatory-obecne.php">Modifikátory obecně</a></li>
+      <li><a href="modifikator-capitalize.php">- capitalize</a></li>
+      <li><a href="modifikator-cat.php">- cat</a></li>
+      <li><a href="modifikator-count.php">- count_*</a></li>
+      <li><a href="modifikator-date-format.php">- date_format</a></li>
+      <li><a href="modifikator-default.php">- default</a></li>
+      <li><a href="modifikator-escape.php">- escape</a></li>
+      <li><a href="modifikator-indent.php">- indent</a></li>
+      <li><a href="modifikator-lower-a-upper.php">- lower a upper</a></li>
+      <li><a href="modifikator-nl2br.php">- nl2br</a></li>
+      <li><a href="modifikator-regex-replace.php">- regex_replace</a></li>
+      <li><a href="modifikator-replace.php">- replace</a></li>
+      <li><a href="modifikator-spacify.php">- spacify</a></li>
+      <li><a href="modifikator-string-format.php">- string_format</a></li>
+      <li><a href="modifikator-strip.php">- strip</a></li>
+      <li><a href="modifikator-strip-tags.php">- strip_tags</a></li>
+      <li><a href="modifikator-truncate.php">- truncate</a></li>
+      <li><a href="modifikator-wordwrap.php">- wordwrap</a></li>
+      <li><a href="kombinace-modifikatoru.php">Kombinace modifikátorů</a></li>
+      <li><a href="zabudovane-funkce.php">Zabudované funkce</a></li>
+      <li><a href="funkce-capture.php"> {capture}</a></li>
+      <li><a href="funkce-config-load.php"> {config_load}</a></li>
+      <li><a href="funkce-foreach.php"> {foreach}</a></li>
+      <li><a href="funkce-if.php"> {if}</a></li>
+      <li><a href="funkce-include.php"> {include}</a></li>
+      <li><a href="funkce-include-php.php"> {include_php}</a></li>
+      <li><a href="funkce-insert.php"> {insert}</a></li>
+      <li>--- of. web: ---</li>
+      <li><a href="http://smarty.net/manual/en/language.builtin.functions.php">Built-in Functions</a></li>
+      <li><a href="http://smarty.net/manual/en/language.custom.functions.php">Custom Functions</a></li>
+      <li><a href="http://smarty.net/manual/en/smarty.for.programmers.php">Pro programatory</a></li>
+      <li><a href="web-autor.php">Web, autor</a></li>
+      </ul>
+    </div>
+
+                                                        
+
+    
+    
+    <div id="content">
+    <h2>Jak nainstalovat Smarty</h2>    
+    
+    <p>Pro bezproblémové fungování potřebuje Smarty PHP 4.0.6 a vyšší. Smarty stáhnete z adresy <a href='http://smarty.php.net/download.php'>smarty.php.net/download.php</a>. V době psaní článku byla nejnovější verze <a href='http://smarty.php.net/do_download.php?download_file=Smarty-2.6.14.tar.gz'>2.6.14</a>. Balíček Smarty si stáhněte a rozbalte.</p>
+  
+  <p>Balíček Smarty rozbalte a podívejte se do složky libs, tady najdete vše podstatné pro běžnou práci. Dále v rootu webu (když smarty jen testujete, vytvořte si např. cestu http://localhost/smarty) vytvořte složku smarty, do které přesuňte soubory</p>
+  
+  <ul class='seznam'>
+    <li>Smarty.class.php</li>
+    <li>Smarty_Compiler.class.php</li>
+    <li>Config_File.class.php</li>
+    <li>debug.tpl</li>
+    <li>celou složku internals</li>
+    <li>celou složku plugins</li>
+  </ul>
+  
+  <p>V rootu webu si dále vytvořte např. složku www, kde budete mít webové aplikace (http://localhost/smarty/www). </p>
+  
+  <p>V rootu webu dále vytvořte 4 další složky. První se bude jmenovat templates, zde budou šablony. Další je templates_c pro zkompilované šablony. Pak configs pro konfigurační soubory a poslední je cache pro cachovaní. Složky templates_c a cache musí mít povolené práva pro zápis. Adresářová struktura tedy bude taková (pro testování):</p>
+  
+  <ul class='seznam'>
+    <li>http://localhost/smarty/www</li>
+    <li>http://localhost/smarty/smarty</li>
+    <li>http://localhost/smarty/template</li>
+    <li>http://localhost/smarty/template_c</li>
+    <li>http://localhost/smarty/configs</li>
+    <li>http://localhost/smarty/cache</li>
+  </ul> 
+  
+  <p><strong>Pozor!</strong> Takovou strukturu si můžete dovolit pouze pro testování na localhostu, na webu z důvodu bezpečnosti je lepší umístit soubory se Smarty mimo adresářovou strukturu.</p>
+  
+  <p>Pak vytvořte soubor moje-smarty.php a uložte ho do adresáře www. Ten nyní budeme modifikovat pro naše potřeby takto:</p>
+  
+<pre><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">require&nbsp;</span><span style="color: #DD0000">'../smarty/Smarty.class.php'</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">MojeSmarty&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Smarty&nbsp;</span><span style="color: #007700">{<br /><br />&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__construct</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">template_dir&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'../templates/'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">config_dir&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'../config/'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">compile_dir&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'../templates_c/'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">cache_dir&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'../cache/'</span><span style="color: #007700">;<br />&nbsp;&nbsp;}<br />&nbsp;&nbsp;<br />}<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></pre>
+      
+    <p>Nejprve jsme načetli soubor Smarty.class.php, vyvořili novou třídu <var>MojeSmarty</var>, která zdědila vlastnosti třídy <var>Smarty</var>. Dále jsme nastavili adresy všech adresářů.</p>
+    
+    <p>Nakonec ještě vytvoříme vzorový soubor index.php, který uložíme do adresáře www. Stejný zápis bude pak používat každý skript, který bude pracovat se Smarty:</p>
+    
+<pre><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">require_once&nbsp;</span><span style="color: #DD0000">'moje-smarty.php'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$smarty&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">MojeSmarty</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></pre>    
+    
+    <p>Skript nejprve zahrne a následně vytváří instanci vaší vytvořené třídy.</p>
+    
+ 
+     <p>Pokračujte dále: <a href="moje-prvni-smarty.php">Moje první Smarty</a></p>
+         
+    </div>
+    </div>
+    <div id="paticka">
+    <p><a href="http://www.ronnieweb.net">RonnieWeb.net</a></p>
+    </div>
+  </body>
+</html>

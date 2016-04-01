@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+ <head>
+  <meta name="generator" content="PSPad editor, www.pspad.com" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Smarty - modifikátor strip" />
+    <meta name="keywords" content="php,php5,smarty,promenne" />
+    <meta name="robots" content="all, follow"/>
+    <meta name='googlebot' content='index,follow,snippet,archive' />
+    <meta name="author" content="Design a kod: Ronnie, jakub.mrozek@gmail.com" />
+    <link rel="stylesheet" href="default.css" type="text/css"  media="screen, projection, all" />
+
+    <link rel="stylesheet" href="print.css" type="text/css"  media="print" />
+    <title>
+      Smarty | modifikátor strip
+      
+    </title>
+
+  </head>
+  <body>
+    <p>
+    <a class="preskoc_navigaci" href="modifikator-strip.php.html#content">Přeskočit navigaci</a>
+    </p>
+
+    <div id="hlavni_cast">
+    <p class="top">&nbsp;</p>
+    <h1><a href="index.php.html">Modifikátor strip<span></span></a></h1>
+    
+    <div id="toolbar">
+    <p><span>Právě se nacházíte:</span> <a href='index.php.html'>Úvod</a> &rsaquo;&rsaquo; Modifikátor strip</p>
+    </div>
+    
+    
+    <div id="menu">
+      <ul>   
+      <li><a href="index.php.html">Úvodní stránka</a></li>
+      <li><a href="co-je-smarty.php.html">Co je Smarty?</a></li>
+      <li><a href="instalace.php.html">Instalace</a></li>
+      <li><a href="moje-prvni-smarty.php.html">Moje první Smarty</a></li>
+      <li><a href="komentare.php.html">Komentáře</a></li>
+      <li><a href="promenne.php.html">Proměnné</a></li>
+      <li><a href="funkce.php.html">Funkce</a></li>
+      <li><a href="atributy.php.html">Atributy</a></li>
+      <li><a href="zabraneni-parsovani.php.html">Zabránění parsování</a></li>
+      <li><a href="smarty-promenne.php.html">Smarty proměnné</a></li>
+      <li><a href="modifikatory-obecne.php.html">Modifikátory obecně</a></li>
+      <li><a href="modifikator-capitalize.php.html">- capitalize</a></li>
+      <li><a href="modifikator-cat.php.html">- cat</a></li>
+      <li><a href="modifikator-count.php.html">- count_*</a></li>
+      <li><a href="modifikator-date-format.php.html">- date_format</a></li>
+      <li><a href="modifikator-default.php.html">- default</a></li>
+      <li><a href="modifikator-escape.php.html">- escape</a></li>
+      <li><a href="modifikator-indent.php.html">- indent</a></li>
+      <li><a href="modifikator-lower-a-upper.php.html">- lower a upper</a></li>
+      <li><a href="modifikator-nl2br.php.html">- nl2br</a></li>
+      <li><a href="modifikator-regex-replace.php.html">- regex_replace</a></li>
+      <li><a href="modifikator-replace.php.html">- replace</a></li>
+      <li><a href="modifikator-spacify.php.html">- spacify</a></li>
+      <li><a href="modifikator-string-format.php.html">- string_format</a></li>
+      <li><a href="modifikator-strip.php.html"><strong>- strip</strong></a></li>
+      <li><a href="modifikator-strip-tags.php.html">- strip_tags</a></li>
+      <li><a href="modifikator-truncate.php.html">- truncate</a></li>
+      <li><a href="modifikator-wordwrap.php.html">- wordwrap</a></li>
+      <li><a href="kombinace-modifikatoru.php.html">Kombinace modifikátorů</a></li>
+      <li><a href="zabudovane-funkce.php.html">Zabudované funkce</a></li>
+      <li><a href="funkce-capture.php.html"> {capture}</a></li>
+      <li><a href="funkce-config-load.php.html"> {config_load}</a></li>
+      <li><a href="funkce-foreach.php.html"> {foreach}</a></li>
+      <li><a href="funkce-if.php.html"> {if}</a></li>
+      <li><a href="funkce-include.php.html"> {include}</a></li>
+      <li><a href="funkce-include-php.php.html"> {include_php}</a></li>
+      <li><a href="funkce-insert.php.html"> {insert}</a></li>
+      <li>--- of. web: ---</li>
+      <li><a href="http://smarty.net/manual/en/language.builtin.functions.php">Built-in Functions</a></li>
+      <li><a href="http://smarty.net/manual/en/language.custom.functions.php">Custom Functions</a></li>
+      <li><a href="http://smarty.net/manual/en/smarty.for.programmers.php">Pro programatory</a></li>
+      <li><a href="web-autor.php.html">Web, autor</a></li>
+      </ul>
+    </div>
+
+                                                        
+
+    <div id="content">
+    <h2>Modifikátor strip</h2>    
+    
+    <p>Modifikátor <code>strip</code> umožňuje nahradit všechy opakující se mezery, řádky, tabulátory jednou mezerou nebo řetězcem uvedeným jako parametr.</p>
+
+
+<pre><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php&nbsp;<br />$smarty</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assign</span><span style="color: #007700">(</span><span style="color: #DD0000">'retezec'</span><span style="color: #007700">,</span><span style="color: #DD0000">"Nejaka\nvelmi&nbsp;dlouha\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;veta."</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></pre>   
+
+    <p>a šablona:</p>
+    
+<pre><code><span style="color: #000000">
+&lt;body&gt;<br />{$retezec}&lt;br&nbsp;/&gt;<br />{$retezec|strip}&lt;br&nbsp;/&gt;<br />{$retezec|strip:"&amp;nbsp;"}<br />&lt;/body&gt;<br /></span>
+</code></pre> 
+    
+    <p>A výsledek (ve zdr. kódu) bude:</p>
+    
+<pre><code><span style="color: #000000">
+&lt;body&gt;<br />Nejaka<br />velmi&nbsp;dlouha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;veta.&lt;br&nbsp;/&gt;<br />Nejaka&nbsp;velmi&nbsp;dlouha&nbsp;veta.&lt;br&nbsp;/&gt;<br />Nejaka&amp;nbsp;velmi&amp;nbsp;dlouha&amp;nbsp;veta.<br />&lt;/body&gt;<br /></span>
+</code></pre>     
+    
+    
+     <p>Pokračujte dále: <a href="modifikator-strip-tags.php.html">Modifikátor strip_tags</a></p>
+         
+    </div>
+    </div>
+    <div id="paticka">
+    <p><a href="http://www.ronnieweb.net">RonnieWeb.net</a></p>
+    </div>
+  </body>
+</html>

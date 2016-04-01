@@ -1,0 +1,219 @@
+/* Styly pro cely dokument */
+
+* {
+margin: 0;
+padding: 0;
+}
+      
+body {
+font-family: 'Georgia CE', 'Times New CE', 'New York CE', Georgia, times, serif;
+color: #000;
+text-align: center;
+min-width: 700px;
+}
+  
+ /* Odkazy */   
+     
+a:link {
+color: #702612;
+}
+a:visited {
+color: black;
+}
+a:active {
+color: #ff3300;
+}
+a:hover {
+color: rgb(0,0,153);
+text-decoration: none;
+}
+a:focus {
+color: #ff3300;
+}
+
+
+/* Styly pro preskoceni navigace */
+	
+.preskoc_navigaci{
+width: 200px;
+position: absolute;
+left: 0;
+top: -1000px;
+}
+
+hr {
+display: none;
+}
+
+/* Opakovani obrazku */
+
+#hlavni_cast {
+width: 721px;
+margin: 0 auto;
+text-align: left;
+background: white url(soubory/stred.jpg) repeat-y; 
+min-height: 1200px;
+}
+
+/* proužek */
+.top{
+width: 651px;
+height: 5px;
+line-height: 5px;
+background-color: #AE2F0C;
+text-align: center;
+margin: 0 auto;
+}
+
+
+/* Pixyho metoda */
+     
+h1, h1 span {
+width: 651px;
+height: 191px;
+font-size: 130%;
+position: relative;
+left: 0;
+top: 0;
+overflow: hidden;
+margin: 0 auto;
+padding: 0;
+text-align: center;
+}
+
+h1 span {
+position: absolute;
+display: block;
+background: white url(soubory/hlavicka.jpg) no-repeat; 
+z-index: 1;
+cursor: pointer;
+}
+
+#toolbar{
+margin: 0 auto;
+text-align: center;
+height: 23px;
+line-height: 23px;
+background-color: #AE2F0C;
+width: 651px;
+}
+
+#toolbar p{
+text-align: left;
+color: #E7EFE9;
+font-style: italic;
+font-size: 95%;
+padding: 0 7px;
+}
+
+#toolbar p span{
+font-weight: bold;
+font-style: normal;
+}
+
+#paticka{
+width: 721px;
+margin: 0 auto;
+text-align: center;
+background: white url(soubory/stred.jpg) repeat-y; 
+height: 23px;
+line-height: 23px;
+clear: left;
+}
+
+#paticka p{
+background-color: #AE2F0C;
+width: 651px;
+margin: 0 auto;
+text-align: center;
+}
+
+#paticka p a, #toolbar p a{
+color: #E7EFE9;
+}
+
+#content{
+width: 450px;
+margin-left: 220px;
+}
+
+#content p{
+padding: 7px 0;
+}
+
+h2, h3{
+color: #AE2F0C;
+padding-top: 30px;
+font-size: 115%;
+}
+
+h3{
+font-size: 105%;
+font-style: italic;
+padding-top: 10px;
+}
+
+
+#menu{
+width: 150px;
+float: left;
+padding: 35px 0 0 45px;
+overflow: hidden;
+}
+
+#menu ul{
+}
+
+#menu ul li{
+list-style-type: none;
+width: 150px;
+line-height: 19px;
+}
+
+#menu ul li a{
+width: 150px;
+display: block;
+border-bottom: 1px #AE2F0C solid;
+text-decoration: none;
+}
+
+#menu ul li a:hover{
+color: black;
+background-color: white;
+}
+
+#menu ul li a:visited{
+
+}
+
+#menu ul li a:active{
+
+}
+
+
+code{
+overflow: hidden;
+width: 450px;
+}
+
+ol{
+margin: 5px 0 5px 26px;
+}
+
+.get_{
+margin-left: 15px;
+}
+
+pre code{
+border: 1px black solid;
+background-color: white;
+padding: 0 5px;
+display: block;
+width: 440px;
+overflow: auto;
+font-size: 90%;
+}
+
+.seznam{
+margin-left: 20px;
+}
